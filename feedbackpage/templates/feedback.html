@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Feedback Page</h1>
+<form method="post" action="" class="form-control">
+    <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+            {% csrf_token %}
+            <div>
+                {{ form.as_p }}
+            </div>
+        </div>
+    </div>
+    <div class="col-auto my-1">
+
+        <button type="submit">Submit</button>
+    </div>
+
+
+</form>
+</body>
+</html>

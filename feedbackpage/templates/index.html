@@ -1,0 +1,8 @@
+{% if obj %}
+{% for form in obj %}
+{{ form.name }}<br>
+{{ form.email }}<br>
+{{ form.feedback }}
+
+{% endfor %}
+{% endif %}
